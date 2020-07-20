@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build  --build-arg FAV_FOOD=${FAV_FOOD} -t simple-node
+  - docker build  --build-arg FAV_FOOD=${FAV_FOOD} -t simple-node .
   - docker tag simple-node adeboludeyi/simple-node:latest
 
 after_success:
